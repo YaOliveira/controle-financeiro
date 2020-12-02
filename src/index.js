@@ -1,17 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import './index.css'
+import ReactDom from 'react-dom'
+import React from 'react'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const menu = <strong>Controle Financeiro</strong>
+const transaction_type = <div>Tipo de Transação</div>
+const commodity_name = <div>Nome da mercadoria</div>
+const commodity_value = <div>Valor</div>
+const btn_add_transaction = <button>Adicionar transação</button>
+const transaction_statement = <div><strong>Extrato de Transações</strong></div>
+const commodity = <div><strong>Mercadoria</strong></div>
+const value = <strong>Value</strong>
+ReactDom.render(
+    <div>
+        {menu}
+        {transaction_type}
+        {commodity_name}
+        {commodity_value}
+        {btn_add_transaction}
+        {transaction_statement}
+        {commodity}
+        {value}
+    </div>,
+    document.getElementById('root'))
