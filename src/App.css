@@ -8,7 +8,12 @@
 
 .App-title{
   text-align: center;
-  color: #484848;
+  color: #333333;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
 }
 .App-header {
   background-color: #E0E0E0;
@@ -22,7 +27,7 @@
   align-items: center
 }
 .menu-hamburger{
-  background-color: #E0E0E0;
+  background-color: #DADADA;
   width: 60px;
   height: 60px;
   bottom: 25px;
