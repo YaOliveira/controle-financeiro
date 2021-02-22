@@ -13,6 +13,26 @@ function App() {
           <span class="hamburger"></span>
         </div>
       </header>
+      <body>
+      <form class="transaction-form">
+        <div class="Select-transaction">
+          <label for="transaction">Tipo de transação</label>
+          <select id="transaction" required>
+            <option selected disabled value="">Selecione</option>
+            <option>Compra</option>
+            <option>Venda</option>
+          </select>
+        </div>
+        <div class="Commodity">
+          <label for="commodity_name">Nome da mercadoria</label>
+          <input type="text" name="commodity_name" id="commodity_name" placeholder="Input" required></input>
+        </div>
+        <div class="Value">
+          <label for="value">Valor</label>
+          <input type="number" min="1" step="any" name="value" id="value" placeholder="R$ 0,00" required></input>
+        </div>
+      </form>
+      </body>
     </div>
   );
 }
