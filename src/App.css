@@ -8,7 +8,8 @@
 
 .App-title{
   text-align: center;
-  color: #484848;
+  color: #333333;
+  ;
 }
 .App-header {
   background-color: #E0E0E0;
@@ -19,10 +20,12 @@
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  align-items: center
+  align-items: center;
+  z-index: 2;
 }
+
 .menu-hamburger{
-  background-color: #E0E0E0;
+  background-color: #DADADA;
   width: 60px;
   height: 60px;
   bottom: 25px;
@@ -53,4 +56,40 @@
 .hamburger::after{
   bottom: -10px;
 }
+.transaction-form{
+  position: absolute;
+  width: 371px;
+  height: 290px;
+  left: 20px;
+  top: 110px;
+}
+.Select-transaction{
+  /* Tipo de transação */
+  /* position: absolute; */
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 61.01%;
 
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  /* or 157% */
+
+  color: #333333;
+
+}
+.Select-transaction select{
+  /* position: absolute; */
+  height: 32px;
+  left: 0%;
+  right: 0%;
+  top: 25px;
+  
+  background: #FFFFFF;
+  border: 1px solid #979797;
+  box-sizing: border-box;
+  border-radius: 4px;  
+}
