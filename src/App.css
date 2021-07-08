@@ -3,36 +3,59 @@
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-title{
+  text-align: center;
+  color: #333333;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}
+.App-header {
+  background-color: #E0E0E0;
+  min-height: 5vh;
+  color: black;
+  font-size: calc(5px + 1vmin);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center
+}
+.menu-hamburger{
+  background-color: #DADADA;
+  width: 60px;
+  height: 60px;
+  bottom: 25px;
+  right: 25px;
+}
+.hamburger{
+  position: relative;
+  display: block;
+  background-color: #000;
+  width: 30px;
+  height: 2px;
+  top: 30px;
+  left: 15px;
+}
+.hamburger::before,
+.hamburger::after {
+  background-color: #000;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+}
+.hamburger::before{
+  top: -10px;
+}
+.hamburger::after{
+  bottom: -10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
